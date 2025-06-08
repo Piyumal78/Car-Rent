@@ -2,18 +2,40 @@
     <head>  
         <title>Home</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
         <script src="script.js"></script>
     </head>
     <body>
+        <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll('.box');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    boxes.forEach(box => {
+        observer.observe(box);
+    });
+});
+</script>
         <header>
+            <nav class="navbar">
             <div class="logo">
-           <nav class="navbar">
-                <span class="logo-text">DriveEasy</span>
-                <span><a href="home.html">Home</a></span>   
-                 <span><a href="Cars.html">About Us</a></span>
-                 <span><a href="booknow.html">Book Now</a></span>
-                 <span><a href="about.html">About</a></span>
-                <span><a href="contact.html">Contact Us</a></span>
+            <img src="DriveEasy_Logo-removebg-preview.png" width="50px" height="50px" alt="DriveEasy Logo" class="logo-image">
+            <span class="logo-text">DriveEasy</span>
+        </div>  
+               <ul class="nav-menu animated-navbar">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
             </nav>
             </div>
             
@@ -26,65 +48,85 @@
                 <a href="cars.html" class="cta-button">View Cars</a>
                 <a href="booking.html" class="cta-button secondary">Book Now</a>
             </div>
-            <div class="hed-image">
-            <img src="Navy Luxury Car Showroom Logo.jpg" alt="Luxury Car">
-        </div>
+            <div class="car-container">
+               <img src="Navy_Luxury_Car_Showroom_Logo-removebg-preview.png" alt="Luxury Car" class="car-image">
+             </div>
         
             </div>
         </header>
         <main>
-            <section class="Safe & Secure">
+            
+            <div class="features">
+                <h2 class="choose">Why Choose DriveEasy?</h2>
+                </div>
+            <div class ="features-container">
+                <div class="features-box">
+                <section class="box">
+                <i class="fas fa-shield-alt"></i>
                 <h2>Safe & Secure</h2>
                 <p>All our vehicles are regularly maintained and fully insured for your complete safety and peace of mind.</p>
-                <button onclick="location.href='services.html'">View Services</button>
+                
             </section>
-
-            <section class="bestprice">
+            <section class="box">
+                <i class="fas fa-dollar-sign"></i>
                 <h2>Best Prices</h2>
                 <p>Competitive rates with no hidden fees. Get the best value for your money with transparent pricing.</p>
             </section>
-            <section class="24/7 Support">
+            <section class="box">
+                <i class="fas fa-clock"></i>
                 <h2>24/7 Support</h2>
                 <p>Round-the-clock customer support and roadside assistance for all your rental needs.</p>
             </section>
-            <section class="multiplelocation">
+            <section class="box">
+               <i class="fas fa-map-marker-alt"></i> 
                 <h2>Multiple Locations</h2>
                 <p>Convenient pickup and drop-off locations across the city, including airports and hotels.</p>  
             </section>
-            <section class="premiumfleet">
+            <section class="box">
+                <i class="fas fa-car"></i>
                 <h2>Premium Fleet</h2>
                 <p>Wide selection of well-maintained vehicles from economy cars to luxury SUVs.</p>
             </section>
-            <section class="easybooking">
+            <section class="box">
+                <i class="fas fa-mobile-alt"></i>
                 <h2>Easy Booking</h2>
-           <div >
-            <div class="middle">
-                <h2>10,000+</h2>
-                <p>Happy Customers</p>
+                <p>Quick and easy online booking process. Reserve your vehicle in just a few clicks.</p>
+            </section>
             </div>
-            <div class="middle">
-                <h2>500+</h2>
-                <p>Vehicles Available</p>
+            </div >
+
+           <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Cars Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Locations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
             </div>
-            <div class="middle">
-                <h2>24/7</h2>
-                <p>Customer Support</p>     
-            </div>
-            <div class="middle">
-                <h2>100+</h2>
-                <p>Locations Worldwide</p>
-            </div>
-            <div class="middle">
-                <h2>15+</h2>
-                <p>Years of Experience</p>
-            </div>    
-           </div>
-           <main>
-            <section>
-               <h1>Featired Vehicles</h1>
+        </div>
+    </section>
+           
+           
+            <section class ="featured-vehicle">
+                <div class="featured-vehicle-header">
+               <h2>Featured Vehicles</h2>
                <p>Discover our most popular rental cars</p>
-                <div class="featured-vehicles">
-                     <div class="vehicle">
+                </div>
+                <div class="vehicles">
+                     <div class="vehicles">
+                    <div class="vehicle">
                           <img src="car1.jpg" alt="Car 1">
                           <h3>Luxury Sedan</h3>
                           <p>Comfort and style for your journeys.</p>
@@ -100,6 +142,7 @@
                           <p>Enjoy the open air with this stylish ride.</p>
                      </div>
                      <button class="view-all" onclick="location.href='cars.html'">View All Vehicles</button>
+                </div>
                 </div>
            </section>
           <section class="testimonials">
@@ -117,7 +160,7 @@
                     <h3>- Emily R.</h3>
                 </div>
             </section>
-            </main>
+            
            <footer>
                <h1>DriveEasy</h1>
                <p>Your trusted partner for reliable and affordable car rentals. Experience the freedom of the road with our premium fleet.</p>
