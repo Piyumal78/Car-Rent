@@ -430,11 +430,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     
 }
 .viewall-button {
-    background: var(--blue-oyster-cult);
+    background: #DAA520;
     color: rgb(33, 6, 6);
     padding: 15px 30px;
     text-decoration: none;
@@ -442,7 +442,53 @@ main {
     font-weight: bold;
     transition: all 0.3s;
 }
+.testimonials {
+    background: #f4f4f4;
+    padding: 40px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.feedback{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 450px 450px 450px;
+    padding: 40px;
+    gap: 20px;
+}
+.feedback-bubble {
+  position: relative;
+  max-width: 500px;
+  padding: 20px;
+  background: white;
+  color: #333;
+  border: 3px solid #333;
+  border-radius: 12px;
+  margin: 30px;
+  font-family: sans-serif;
+}
 
+/* The “tail” */
+.feedback-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;       /* pull it below the box */
+  left: 30px;          /* horizontal offset of the tail */
+  border-width: 20px 15px 0 15px; /* height = 20px, width = 30px */
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Optional: text styling */
+.feedback-bubble p {
+  margin: 0;
+  line-height: 1.4;
+}
 
 
 
