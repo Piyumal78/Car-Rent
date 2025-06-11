@@ -29,6 +29,8 @@ body {
     position: fixed;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }   
 .animated-navbar {
     animation: navbarSlideIn 2s ease-out forwards;
@@ -496,14 +498,17 @@ main {
 footer {
     background-color: var(--astrogranite-debris);
     color: white;
-    text-align: center;
     padding: 20px;
-    position: relative;
     bottom: 0;
     width: 100%;
 }
-
-.warning {
-    background-color: var(--deep-yellow);
-    color: #333;
+.footer-container {
+    display: flex;
+    flex-flow: row-reverse;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background: var(--astrogranite-debris, #222); /* fallback color */
+    color: #fff;
 }
