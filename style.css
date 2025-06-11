@@ -26,9 +26,10 @@ body {
     display: flex;
     top:0;
     width: 100%;
-    position: fixed;
+    position:fixed;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }   
 .animated-navbar {
     animation: navbarSlideIn 2s ease-out forwards;
@@ -201,7 +202,7 @@ body {
 }
 .car-container {
   margin-top: 40px;
-  position: relative;
+  position: static;
   animation: driveIn 2s ease-out forwards;
 }
 
