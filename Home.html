@@ -1,5 +1,7 @@
 <htmL>
-    <head>  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <title>Home</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -28,17 +30,53 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="logo">
             <img src="DriveEasy_Logo-removebg-preview.png" width="50px" height="50px" alt="DriveEasy Logo" class="logo-image">
             <span class="logo-text">DriveEasy</span>
+            <div class="logo-glow"></div>
         </div>  
                <ul class="nav-menu animated-navbar">
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="cars.html">Cars</a></li>
-                <li><a href="booking.html">Book Now</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">
+                       <i class="fas fa-home"></i>
+                       <span class="nav-text">Home</span> 
+                       <div class ="nav-underline"></div>
+                        </a>
+                    </li>
+                
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                          <i class="fas fa-info-circle"></i>
+                          <span class="nav-text">About Us</span>
+                          <div class ="nav-underline"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="cars.html" class="nav-link">
+                        <i class="fas fa-car"></i>
+                        <span class="nav-text">Cars</span>  
+                        <div class ="nav-underline"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="nav-text">Book Now</span>
+                        <div class ="nav-underline"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span class="nav-text">Contact Us</span>
+                        <div class ="nav-underline"></div>
+                    </a>
+                </li>
             </ul>
             </nav>
             </div>
+<<<<<<< HEAD
             </header>
+=======
+             </header>
+>>>>>>> 46eb48708ae05fafcb790e907dc08fb4b5e7ff42
             <div class="top-header">
             <div class="header-text">
                 <h1>Find Your Perfect Ride</h1>
@@ -53,7 +91,11 @@ document.addEventListener("DOMContentLoaded", function() {
              </div>
         
             </div>
+<<<<<<< HEAD
         
+=======
+       
+>>>>>>> 46eb48708ae05fafcb790e907dc08fb4b5e7ff42
         <main>
             
             <div class="features">
@@ -127,17 +169,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="vehicles-container">
                      <div class="vehicles-item">
                     <div class="vehicles">
-                          <img src="car1.jpg" alt="Car 1">
+                          <img src="Luxury Sedan.png" width="300" height="200" alt="Car 1">
                           <h3>Luxury Sedan</h3>
                           <p>Comfort and style for your journeys.</p>
                      </div>
                      <div class="vehicles">
-                          <img src="car2.jpg" alt="Car 2">
+                          <img src="SUV.png" width="300" height="200" alt="Car 2">
                           <h3>SUV</h3>
                           <p>Spacious and perfect for family trips.</p>
                      </div>
                      <div class="vehicles">
-                          <img src="car3.jpg" alt="Car 3">
+                          <img src="Convertible.jpg" width="300" height="200"  alt="Car 3">
                           <h3>Convertible</h3>
                           <p>Enjoy the open air with this stylish ride.</p>
                      </div>
@@ -166,15 +208,23 @@ document.addEventListener("DOMContentLoaded", function() {
             </section>
             
            <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                     <img src="DriveEasy_Logo-removebg-preview.png" alt="DriveEasy Logo" width="50px" height="50px">
                <h1>DriveEasy</h1>
-               <p>Your trusted partner for reliable and affordable car rentals. Experience the freedom of the road with our premium fleet.</p>
-
-               
-               <p>Follow us on:
-                   <a href="https://www.facebook.com">Facebook</a> |
-                   <a href="https://www.twitter.com">Twitter</a> |
-                   <a href="https://www.instagram.com">Instagram</a>
+               <p>Your trusted partner for reliable and affordable car rentals. Experience the freedom <br>of the road with our premium fleet.</p>
+                <div class="social-media">
+                   <h2>Follow Us</h2>
+               <p class ="social-icons">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
                </p>
+            </div>
+            </div>
+            
+            <div class="footer-links">
               <h2>Quick Links</h2>
                 <ul>
                 <li><a href="home.html">Home</a></li>
@@ -183,26 +233,31 @@ document.addEventListener("DOMContentLoaded", function() {
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
               </ul>
+                </div>
+
+                
+                <div class="footer-links">
               <h2>Service</h2>
                 <ul>
                     <li><a href="services.html">Our Services</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="terms.html">Terms & Conditions</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
+                </div>
+                <div class="footer-links">
                 <h2>Support</h2>
                 <ul>
-                    <li><a href="support.html">FAQ</a></li>
-                    <li><a href="feedback.html">Terms & Condition</a></li>
-                    <li><a href="careers.html">Customer Support</a></li>
-                    <li><a href="sitemap.html">Roadside Assistance</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Roadside Assistance</a></li>
                 </ul>
-            
-    
-
-
-               <p>&copy; 2025 DriveEasy Car Rental. All rights reserved.</p>
+            </div>
+            </div>
+             <hr>
+               <p class="hr">&copy; 2025 DriveEasy Car Rental. All rights reserved.</p>
              
-  
+         </footer>
     </body>
 </html>
