@@ -567,7 +567,7 @@ main {
 }
 .car-item{
     background: white;
-    padding:40px 20px;
+    padding:70px 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
@@ -587,10 +587,51 @@ main {
     font-weight: bold;
    
 }
-.car-type{
+.car-info h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    left:40px;
+}
+.car-type p{
     font-size: medium;
     font-weight:bold;
+    color: #666;
+}
+.car-features {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    bottom:10px
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 10px;
+}
+.rent-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  background: #e74c3c; 
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
 
+.rent-btn:hover {
+  background: #884c1d;
 }
 
 
