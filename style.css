@@ -558,7 +558,9 @@ main {
     padding: 0 20px;
 }
 .car-grid{
-  display: flex;         
+    display: flex;
+    flex-wrap: wrap;
+         
     gap: 20px;
     justify-content: space-around;
     margin: 40px 0;
@@ -570,6 +572,8 @@ main {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s;
+    border: 2px solid #ef8854;
+    position: relative;
 }
 .car-badge {
     position: absolute;
@@ -581,6 +585,12 @@ main {
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: bold;
+   
+}
+.car-type{
+    font-size: medium;
+    font-weight:bold;
+
 }
 
 

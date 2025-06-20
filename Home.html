@@ -155,58 +155,83 @@ document.addEventListener("DOMContentLoaded", function() {
     </section>
             <!-- Featured Cars Section -->
      <section class="featured-car">
-        <div class="container">
-            <h2>Featured Cars</h2>
-            <p class="section-subtitle">Discover our most popular rental cars</p>
-            <div class="car-grid">
-                <div class="car-item">
-                    <div class="car-badge">Most Popular</div>
-                   <img src="car1.png" width=300 height=200 alt="Car 1">
-                    <div class="car-info">
-                        <h3>Luxury</h3>
-                        <p class="car-type">Luxury Sedan</p>
-                        <div class="car-features">
-                            <span class="feature-icon"><i class="fas fa-cogs"></i> Automatic</span>
-                            <span class="feature-icon"><i class="fas fa-users"></i> 5 Seats</span>
-                            <span class="feature-icon"><i class="fas fa-suitcase-rolling"></i> 2 Luggage</span>
-                         </div>
-                    <p class="price">$50/day</p>
-                    <a href="booking.html?car=Luxury Sedan&price=50" class="rent-btn">Rent Now</a>
-                    </div>
-                </div>
-                <div class="car-item">
-                    <div class="car-badge">Most Popular</div>
-                   <img src="car2.jpg" alt="Car 2">
-                    <div class="car-info">
-                        <h3>Luxury</h3>
-                        <p class="car-type">Luxury Sedan</p>
-                        <div class="car-features">
-                            <span class="feature-icon"><i class="fas fa-cogs"></i> Automatic</span>
-                            <span class="feature-icon"><i class="fas fa-users"></i> 5 Seats</span>
-                            <span class="feature-icon"><i class="fas fa-suitcase-rolling"></i> 2 Luggage</span>
-                         </div>
-                    <p class="price">$50/day</p>
-                    <a href="booking.html?car=Luxury Sedan&price=50" class="rent-btn">Rent Now</a>
-                    </div>
-                </div>
-                <div class="car-item">
-                    <div class="car-badge">Most Popular</div>
-                   <img src="car1.jpg" alt="Car 1">
-                    <div class="car-info">
-                        <h3>Luxury</h3>
-                        <p class="car-type">Luxury Sedan</p>
-                        <div class="car-features">
-                            <span class="feature-icon"><i class="fas fa-cogs"></i> Automatic</span>
-                            <span class="feature-icon"><i class="fas fa-users"></i> 5 Seats</span>
-                            <span class="feature-icon"><i class="fas fa-suitcase-rolling"></i> 2 Luggage</span>
-                         </div>
-                    <p class="price">$50/day</p>
-                    <a href="booking.html?car=Luxury Sedan&price=50" class="rent-btn">Rent Now</a>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <h2>Featured Cars</h2>
+    <p class="section-subtitle">Discover our most popular rental cars</p>
+    <div class="car-grid">
+
+      <!-- Luxury Sedan -->
+      <div class="car-item">
+        <div class="car-badge">Most Popular</div>
+        <img src="luxury.jpg" width="300" height="200" alt="Luxury Sedan">
+        <div class="car-info">
+          <h3>Luxury</h3>
+          <p class="car-type">Luxury Sedan</p>
+          <div class="car-features">
+            <span class="feature-icon"><i class="fas fa-cogs"></i> Automatic</span>
+            <span class="feature-icon"><i class="fas fa-users"></i> 5 Seats</span>
+            <span class="feature-icon"><i class="fas fa-suitcase-rolling"></i> 2 Luggage</span>
+          </div>
+          <p class="price">$60/day</p>
+          <a href="booking.html?car=Luxury Sedan&price=60" class="rent-btn">Rent Now</a>
         </div>
-    </section>   
+      </div>
+
+      <!-- SUV -->
+      <div class="car-item">
+        <div class="car-badge">Family Favorite</div>
+        <img src="suv.jpg" width="300" height="200" alt="SUV">
+        <div class="car-info">
+          <h3>Comfort</h3>
+          <p class="car-type">SUV</p>
+          <div class="car-features">
+            <span class="feature-icon"><i class="fas fa-cogs"></i> Automatic</span>
+            <span class="feature-icon"><i class="fas fa-users"></i> 7 Seats</span>
+            <span class="feature-icon"><i class="fas fa-suitcase-rolling"></i> 4 Luggage</span>
+          </div>
+          <p class="price">$75/day</p>
+          <a href="booking.html?car=SUV&price=75" class="rent-btn">Rent Now</a>
+        </div>
+      </div>
+
+      <!-- Convertible -->
+      <div class="car-item">
+        <div class="car-badge">Stylish Ride</div>
+        <img src="convertible.jpg" width="300" height="200" alt="Convertible">
+        <div class="car-info">
+          <h3>Sport</h3>
+          <p class="car-type">Convertible</p>
+          <div class="car-features">
+            <span class="feature-icon"><i class="fas fa-cogs"></i> Manual</span>
+            <span class="feature-icon"><i class="fas fa-users"></i> 2 Seats</span>
+            <span class="feature-icon"><i class="fas fa-suitcase-rolling"></i> 1 Luggage</span>
+          </div>
+          <p class="price">$90/day</p>
+          <a href="booking.html?car=Convertible&price=90" class="rent-btn">Rent Now</a>
+        </div>
+      </div>
+
+      <!-- Economy Car -->
+      <div class="car-item">
+        <div class="car-badge">Best Value</div>
+        <img src="economy.jpg" width="300" height="200" alt="Economy Car">
+        <div class="car-info">
+          <h3>Budget</h3>
+          <p class="car-type">Economy Car</p>
+          <div class="car-features">
+            <span class="feature-icon"><i class="fas fa-cogs"></i> Manual</span>
+            <span class="feature-icon"><i class="fas fa-users"></i> 4 Seats</span>
+            <span class="feature-icon"><i class="fas fa-suitcase-rolling"></i> 2 Luggage</span>
+          </div>
+          <p class="price">$30/day</p>
+          <a href="booking.html?car=Economy Car&price=30" class="rent-btn">Rent Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+   
     
           <section class="testimonials">
                <h2>What Our Customers Say</h2>
