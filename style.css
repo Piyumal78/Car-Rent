@@ -543,7 +543,7 @@ main {
 .featured-car h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #333;
 }
 .section-subtitle{
@@ -552,28 +552,27 @@ main {
     color:#333;
     margin-bottom: 20px;
 }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 .car-grid{
     display: flex;
-    flex-wrap: wrap;
-         
+    flex-wrap: wrap;   
     gap: 20px;
     justify-content: space-around;
     margin: 40px 0;
 }
 .car-item{
     background: white;
-    padding:70px 20px;
+    padding:50px 20px;
     border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s;
     border: 2px solid #ef8854;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
 }
 .car-badge {
     position: absolute;
@@ -598,11 +597,14 @@ main {
     color: #666;
 }
 .car-features {
+
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-top: 20px;
-    bottom:10px
+    bottom:10px;
 }
 .price {
     font-size: 1.5rem;
@@ -612,13 +614,13 @@ main {
 }
 .rent-btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 20px;
+  padding: 10px 20px;
   background: #e74c3c; 
   border-radius: 15px;
   font-size: 0.8rem;
@@ -628,6 +630,7 @@ main {
   border: none;
   cursor: pointer;
   transition: background 0.2s;
+  margin-top: 10px;
 }
 
 .rent-btn:hover {
