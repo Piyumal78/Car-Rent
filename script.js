@@ -5,6 +5,25 @@ function selectCar(carName, price) {
     if (carElem) carElem.value = carName;
     if (rateElem) rateElem.value = '$' + price + '/day';
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll('.box');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    boxes.forEach(box => {
+        observer.observe(box);
+    });
+});
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Animate boxes
