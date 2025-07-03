@@ -227,7 +227,7 @@
                     <div class="line"></div>
                     <div class="summary-item">
                         <span>Additional Options:</span>
-                        <span id="summaryExtras">$0</span>
+                        <span id="summaryExtras">LKR0</span>
                     </div>
                     <div class="line"></div>
                     <div class="summary-item">
@@ -237,7 +237,7 @@
                     <div class="line"></div>
                     <div class="summary-total">
                         <span>Total Cost:</span>
-                        <span id="summaryTotal" >$0</span>
+                        <span id="summaryTotal" >LKR 0</span>
                     </div>
                     
                     <div class="summary-note">

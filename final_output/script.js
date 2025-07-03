@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         const totalElem = document.querySelector('.summary-total span');
         if (totalElem) {
-            totalElem.textContent = 'Rs. ' + total.toFixed(2);
+            totalElem.textContent = 'LKR ' + total.toFixed(2);
         }
     }
 
