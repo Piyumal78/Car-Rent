@@ -1,5 +1,54 @@
+<<<<<<< HEAD
 <?php include 'header.php'; ?>
          <!-- Booking Page -->
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - DriveEasy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const car = JSON.parse(localStorage.getItem("selectedCar"));
+  if (car) {
+    document.getElementById("car_name").value = car.car;
+    document.getElementById("daily_rate").value = car.price;
+  }
+});
+document.querySelector("form").addEventListener("submit", function () {
+    document.getElementById("inputSummaryPeriod").value = document.getElementById("summaryPeriod").innerText;
+    document.getElementById("inputSummarySubtotal").value = document.getElementById("summarySubtotal").innerText;
+    document.getElementById("inputSummaryExtras").value = document.getElementById("summaryExtras").innerText;
+    document.getElementById("inputSummaryTotal").value = document.getElementById("summaryTotal").innerText;
+});
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+    updateRentalPeriod(); // Ensure values are fresh and synced before submitting
+});
+</script>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="DriveEasy_Logo-removebg-preview.png" alt="DriveEasy Logo" class="logo-image">
+            <span class="logo-text">DriveEasy</span>
+        </div>  
+        <ul class="nav-menu animated-navbar">
+            <li><a href="home.php" class="active">Home</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="cars.php">Cars</a></li>
+            <li><a href="booking.php">Book Now</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Booking Page -->
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
 <main>
     <section class="first-contain">
         <div class="content-wrapper">
@@ -249,5 +298,57 @@
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 <?php include 'footer.php'; ?>
          
+=======
+
+<footer>
+    <h1>DriveEasy</h1>
+    <p>Your trusted partner for reliable and affordable car rentals. Experience the freedom of the road with our premium fleet.</p>
+
+    <p>Follow us on:
+        <a href="https://www.facebook.com">Facebook</a> |
+        <a href="https://www.twitter.com">Twitter</a> |
+        <a href="https://www.instagram.com">Instagram</a>
+    </p>
+
+    <div class="footer-sections">
+        <div>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="cars.php">Cars</a></li>
+                <li><a href="booking.php">Book Now</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Service</h2>
+            <ul>
+                <li><a href="services.php">Our Services</a></li>
+                <li><a href="faq.php">FAQ</a></li>
+                <li><a href="terms.php">Terms & Conditions</a></li>
+                <li><a href="privacy.php">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Support</h2>
+            <ul>
+                <li><a href="support.php">Customer Support</a></li>
+                <li><a href="feedback.php">Feedback</a></li>
+                <li><a href="careers.php">Careers</a></li>
+                <li><a href="sitemap.php">Roadside Assistance</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p>&copy; 2025 DriveEasy Car Rental. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635

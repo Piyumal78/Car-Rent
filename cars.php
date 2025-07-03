@@ -1,5 +1,46 @@
+<<<<<<< HEAD
 <?php include 'header.php'; ?>
           <!-- Page Header -->
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - DriveEasy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<!--<script>
+  function selectCar(carName, carPrice) {
+    const selected = {
+      car: carName,
+      price: carPrice
+    };
+    localStorage.setItem("selectedCar", JSON.stringify(selected));
+    window.location.href = "booking.php";
+  }
+</script>-->
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="DriveEasy_Logo-removebg-preview.png" alt="DriveEasy Logo" class="logo-image">
+            <span class="logo-text">DriveEasy</span>
+        </div>  
+        <ul class="nav-menu animated-navbar">
+            <li><a href="home.php" class="active">Home</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="cars.php">Cars</a></li>
+            <li><a href="book.php">Book Now</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+ <!-- Page Header -->
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
     <section class="page-header">
         <div class="container">
             <h1>Our Fleet</h1>
@@ -60,7 +101,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 4500/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=Toyota Corolla&price=4500" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=Toyota Corolla&price=4500" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
 
@@ -86,7 +131,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 5200/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=Nissan Sentra&price=5200" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=Nissan Sentra&price=5200" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
 
@@ -112,7 +161,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 5000/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=Hyundai Elantra&price=5000" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=Hyundai Elantra&price=5000" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
 
@@ -139,7 +192,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 12000/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=BMW 3 Series&price=12000" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=BMW 3 Series&price=12000" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
 
@@ -165,7 +222,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 15000/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=Mercedes C-Class&price=15000" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=Mercedes C-Class&price=15000" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
 
@@ -191,7 +252,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 13000/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=Audi A4&price=13000" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=Audi A4&price=13000" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
 
@@ -218,7 +283,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 8000/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=Honda CR-V&price=8000" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=Honda CR-V&price=8000" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
 
@@ -244,7 +313,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 8500/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=Ford Explorer&price=8500" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=Ford Explorer&price=8500" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
 
@@ -270,7 +343,11 @@
                             </div>
                         </div>
                         <div class="car-price">LKR 10000/day</div>
+<<<<<<< HEAD
                         <a href="booking.php?car=Chevrolet Tahoe&price=10000" class="rent_btn">Rent Now</a>
+=======
+                        <a href="booking.php?car=Chevrolet Tahoe&price=10000" class="rent-btn">Rent Now</a>
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
                     </div>
                 </div>
             </div>
@@ -292,5 +369,58 @@
             <a href="booking.php" class="cta-button">Book Now</a>
         </div>
     </section>
+<<<<<<< HEAD
 <?php include 'footer.php'; ?>
          
+=======
+
+<footer>
+    <h1>DriveEasy</h1>
+    <p>Your trusted partner for reliable and affordable car rentals. Experience the freedom of the road with our premium fleet.</p>
+
+    <p>Follow us on:
+        <a href="https://www.facebook.com">Facebook</a> |
+        <a href="https://www.twitter.com">Twitter</a> |
+        <a href="https://www.instagram.com">Instagram</a>
+    </p>
+
+    <div class="footer-sections">
+        <div>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="cars.php">Cars</a></li>
+                <li><a href="booking.php">Book Now</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Service</h2>
+            <ul>
+                <li><a href="services.php">Our Services</a></li>
+                <li><a href="faq.php">FAQ</a></li>
+                <li><a href="terms.php">Terms & Conditions</a></li>
+                <li><a href="privacy.php">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Support</h2>
+            <ul>
+                <li><a href="support.php">Customer Support</a></li>
+                <li><a href="feedback.php">Feedback</a></li>
+                <li><a href="careers.php">Careers</a></li>
+                <li><a href="sitemap.php">Roadside Assistance</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p>&copy; 2025 DriveEasy Car Rental. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635

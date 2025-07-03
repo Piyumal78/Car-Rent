@@ -5,6 +5,28 @@ function selectCar(carName, price) {
     if (carElem) carElem.value = carName;
     if (rateElem) rateElem.value = '$' + price + '/day';
 }
+<<<<<<< HEAD
+=======
+document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll('.box');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    boxes.forEach(box => {
+        observer.observe(box);
+    });
+});
+
+
+
+
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
 
 document.addEventListener("DOMContentLoaded", function () {
     // Animate boxes
@@ -19,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, { threshold: 0.2 });
     boxes.forEach(box => observer.observe(box));
 
+<<<<<<< HEAD
     // Booking form validation
     /*const form = document.querySelector('form');
     const submitBtn = document.querySelector('.submit-btn');
@@ -49,6 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }*/
 
+=======
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
     // Booking summary total (if used)
     function updateSummaryTotal() {
         const items = document.querySelectorAll('.summary-item');
@@ -181,6 +206,7 @@ additionalDriver.addEventListener("change", updateRentalPeriod);
 Coverage.addEventListener("change", updateRentalPeriod);
 
 });
+<<<<<<< HEAD
 
 //here on
 document.addEventListener("DOMContentLoaded", function () {
@@ -245,3 +271,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+=======
+>>>>>>> 152fae90b3d25d72f25378a6ce476345e1f5b635
