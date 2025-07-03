@@ -1,0 +1,15 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .mission-card {
+        margin-bottom: 1.5rem;
+    }
+}
